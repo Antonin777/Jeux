@@ -3,20 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeux</title>
+    <link rel="stylesheet" href="/css/main.css"
+    <title>Curiosity</title>
 </head>
 <body>
     <header>
         <h1>
-            Dev'Jeux
+        
         </h1>
     </header>
     <main>
-
-
-
-
-
+    <!--création du menu de sélection-->    
+        <ul class="menu">
+            <div class="menuToggle"><ion-icon name="add-outline"></ion-icon></div>
+            <li style="--i:0;--clr: rgb(143, 40, 40);">
+                <a href="#"><ion-icon name="book-outline"></ion-icon></a>
+            </li>
+            <li style="--i:1;--clr: rgb(75, 199, 141);">
+                <a href="#"><ion-icon name="calculator-outline"></ion-icon></a>
+            </li>
+            <li style="--i:2;--clr: rgb(45, 105, 133);">
+                <a href="#"><ion-icon name="brush-outline"></ion-icon></a>
+            </li>
+            <li style="--i:3;--clr: rgb(116, 62, 160);">
+                <a href="#"><ion-icon name="settings-outline"></ion-icon></a>
+            </li>
+            <!---<li style="--i:4;--clr: rgb(180, 83, 143);">
+                <a href="#"></a>
+            </li>
+            <li style="--i:5;--clr: rgb(226, 200, 51);">
+                <a href="#"></a>
+            </li>
+            <li style="--i:6;--clr: rgb(65, 165, 65);">
+                <a href="#"></a>
+            </li>
+            <li style="--i:7;--clr: rgb(235, 145, 61);">
+                <a href="#"></a>
+            </li>--->
+            
+        </ul>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script>    
+            let menuToggle = document.querySelector('.menuToggle');
+            let menu = document.querySelector('.menu');
+            menuToggle.onclick = function(){
+                menu.classList.toggle('active');
+            }
+        </script>
     </main> 
     <footer>
             &copy; - Lateam - <time
