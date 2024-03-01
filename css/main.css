@@ -6,13 +6,13 @@
     box-sizing: border-box;
 }
 /*initialisation du main (la couleur de fond, l'alignement des textes et le format de la page(flex)  */
-body
+main
 {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: rgb(32, 30, 37);
+    background: rgb(41, 39, 49);
 }
 /*Centre les différents menu*/ 
 .menu
@@ -80,7 +80,7 @@ body
     height: 60px;
     border: 2px solid var(--clr);
     box-sizing: border-box;
-    background-color: #332736;
+    background-color: #000000;
     transform: rotate(calc(var(--i) * 0deg)) translate(0px,0px);
     transition: transform 0.5s, height 0.5s, width 0.5s;
     transition-delay: 1s,1.5s,1.5s;
