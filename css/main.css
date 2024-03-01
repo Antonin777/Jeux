@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 /*initialisation du main (la couleur de fond, l'alignement des textes et le format de la page(flex)  */
-main
+body
 {
     display: flex;
     justify-content: center;
