@@ -5,6 +5,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+header
+{
+    text-align: center;
+    background-color: rgb(41, 39, 49);
+
+}
 /*initialisation du main (la couleur de fond, l'alignement des textes et le format de la page(flex)  */
 main
 {
@@ -35,10 +41,10 @@ main
     transition-delay: calc(0.1s * var(--i));
     transform: rotate(0deg) translateX(100px);
 }
-/*reprends la fonction active qui est dans le html qui permet le click*/
+/*reprends la fonction active qui lie le html qui permet le click*/
 .menu.active li
 {
-    transform: rotate(calc(360deg / 4 * var(--i)));
+    transform: rotate(calc(360deg / 5 * var(--i)));
 }
 /*transition de l'ouverture de la li*/
 .menu li a
@@ -51,7 +57,7 @@ main
     font-size: 1.5em;
     border-radius: 50%;
     color: #fff;
-    transform: rotate(calc(360deg / -4 * var(--i)));
+    transform: rotate(calc(360deg / -5 * var(--i)));
     color: transparent;
     transition: 1s;
     transition-delay: 0.5s;
@@ -115,7 +121,7 @@ main
     left: 10px;
     width: 40px;
     transition-delay: 0.5s;
-    transform: rotate(calc(var(--i) * 90deg)) translate(50px,0px);
+    transform: rotate(calc(var(--i) * 73deg)) translate(50px,0px);
 
 }
 /*met en évidence l'icon au-dessus des lumières de couleur*/
